@@ -10,15 +10,16 @@ import {MaterialModule} from './material/material.module'
 import {FormsModule,ReactiveFormsModule} from '@angular/forms'
 import {FieldsError} from './resusable/FieldsError'
 import {Backend} from './services/Backend';
-import { ErrorComponent } from './error/error.component'
+import {loginAuth} from './services/Authcator';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     comp_list,
     FieldsError,
-    sBar,
-    ErrorComponent
+    sBar
   ],
   imports: [
     BrowserModule,
@@ -28,7 +29,7 @@ import { ErrorComponent } from './error/error.component'
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [CommonData,Backend],
+  providers: [CommonData,Backend,loginAuth],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

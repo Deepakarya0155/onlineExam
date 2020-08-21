@@ -1,0 +1,16 @@
+
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Hi! {{comm.current_user}}</strong></li>
+            <li class="list-group-item">Logout</li>
+        </ul>
+      
+    </mat-drawer>
+    <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+    </button>
+    
+  
+  </mat-drawer-container>

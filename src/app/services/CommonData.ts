@@ -26,7 +26,7 @@ export class CommonData{
 
 
     calculateScreen(){
-        if(window.screen.availHeight<500){
+        if(window.screen.availWidth<500){
             this.computer_screen=false;
         }else{
             this.computer_screen=true;
